@@ -10,11 +10,11 @@ class connectDB
 
     private function connectDB()
     {
-        $nameserver = "203.188.54.7";
-        $port = "1521";
-        $workDB = "database"; // SID
-        $username = "db671108";
-        $password = "43691";
+        $nameserver = "********";
+        $port = "*****";
+        $workDB = "*****"; // SID
+        $username = "*****";
+        $password = "****";
         try {
             $dsn = "oci:dbname=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST={$nameserver})(PORT={$port}))(CONNECT_DATA=(SERVICE_NAME={$workDB})));charset=UTF8";
             $conn = new PDO($dsn, $username, $password);
